@@ -1,4 +1,5 @@
 {
+    "name": "caesardev/visma-erp-client",
     "description": "PHP Client for VismaNet ERP API",
     "keywords": [
         "php",
