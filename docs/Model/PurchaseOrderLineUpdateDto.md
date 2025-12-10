@@ -1,0 +1,48 @@
+# # PurchaseOrderLineUpdateDto
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**operation** | **string** |  | [optional]
+**line_number** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfInt32**](DtoValueOfNullableOfInt32.md) |  | [optional]
+**branch** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**inventory** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**line_type** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfPoLineType**](DtoValueOfNullableOfPoLineType.md) |  | [optional]
+**warehouse** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**line_description** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**uom** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**order_qty** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfDecimal**](DtoValueOfNullableOfDecimal.md) |  | [optional]
+**unit_cost** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfDecimal**](DtoValueOfNullableOfDecimal.md) |  | [optional]
+**ext_cost** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfDecimal**](DtoValueOfNullableOfDecimal.md) |  | [optional]
+**discount_amount** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfDecimal**](DtoValueOfNullableOfDecimal.md) |  | [optional]
+**discount_percent** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfDecimal**](DtoValueOfNullableOfDecimal.md) |  | [optional]
+**manual_discount** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfBoolean**](DtoValueOfNullableOfBoolean.md) |  | [optional]
+**discount_code** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**amount** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfDecimal**](DtoValueOfNullableOfDecimal.md) |  | [optional]
+**alternate_id** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**min_receipt** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfDecimal**](DtoValueOfNullableOfDecimal.md) |  | [optional]
+**max_receipt** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfDecimal**](DtoValueOfNullableOfDecimal.md) |  | [optional]
+**complete_on** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfDecimal**](DtoValueOfNullableOfDecimal.md) |  | [optional]
+**receipt_action** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfPurchaseOrderReceiptAction**](DtoValueOfNullableOfPurchaseOrderReceiptAction.md) |  | [optional]
+**tax_category** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**account** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**sub** | [**\OpenAPI\Client\Model\SegmentUpdateDto[]**](SegmentUpdateDto.md) |  | [optional]
+**project** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**project_task** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**requested** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfDateTime**](DtoValueOfNullableOfDateTime.md) |  | [optional]
+**promised** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfDateTime**](DtoValueOfNullableOfDateTime.md) |  | [optional]
+**note** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**custom_str1** | [**\OpenAPI\Client\Model\CustomStr1InPurchaseOrderLineUpdateDto**](CustomStr1InPurchaseOrderLineUpdateDto.md) |  | [optional]
+**custom_str2** | [**\OpenAPI\Client\Model\CustomStr2InPurchaseOrderLineUpdateDto**](CustomStr2InPurchaseOrderLineUpdateDto.md) |  | [optional]
+**custom_str3** | [**\OpenAPI\Client\Model\CustomStr3InPurchaseOrderLineUpdateDto**](CustomStr3InPurchaseOrderLineUpdateDto.md) |  | [optional]
+**custom_str4** | [**\OpenAPI\Client\Model\CustomStr4InPurchaseOrderLineUpdateDto**](CustomStr4InPurchaseOrderLineUpdateDto.md) |  | [optional]
+**custom_str5** | [**\OpenAPI\Client\Model\CustomStr5InPurchaseOrderLineUpdateDto**](CustomStr5InPurchaseOrderLineUpdateDto.md) |  | [optional]
+**custom_dec1** | [**\OpenAPI\Client\Model\CustomDec1InPurchaseOrderLineUpdateDto**](CustomDec1InPurchaseOrderLineUpdateDto.md) |  | [optional]
+**custom_dec2** | [**\OpenAPI\Client\Model\CustomDec2InPurchaseOrderLineUpdateDto**](CustomDec2InPurchaseOrderLineUpdateDto.md) |  | [optional]
+**custom_int1** | [**\OpenAPI\Client\Model\CustomInt1InPurchaseOrderLineUpdateDto**](CustomInt1InPurchaseOrderLineUpdateDto.md) |  | [optional]
+**custom_int2** | [**\OpenAPI\Client\Model\CustomInt2InPurchaseOrderLineUpdateDto**](CustomInt2InPurchaseOrderLineUpdateDto.md) |  | [optional]
+**custom_date_time_utc1** | [**\OpenAPI\Client\Model\CustomDateTimeUTC1InPurchaseOrderLineUpdateDto**](CustomDateTimeUTC1InPurchaseOrderLineUpdateDto.md) |  | [optional]
+**completed** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfBoolean**](DtoValueOfNullableOfBoolean.md) |  | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

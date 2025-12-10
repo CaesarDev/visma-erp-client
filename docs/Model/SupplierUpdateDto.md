@@ -1,0 +1,48 @@
+# # SupplierUpdateDto
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**number** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**name** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**status** | [**\OpenAPI\Client\Model\DtoValueOfSupplierStatus**](DtoValueOfSupplierStatus.md) |  | [optional]
+**account_reference** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**number_of_employees** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfInt32**](DtoValueOfNullableOfInt32.md) |  | [optional]
+**parent_record_number** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**supplier_class_id** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**override_with_class_values** | **bool** |  | [optional]
+**credit_terms_id** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**document_language** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**currency_id** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**currency_override** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfBoolean**](DtoValueOfNullableOfBoolean.md) |  | [optional]
+**currency_rate_override** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfBoolean**](DtoValueOfNullableOfBoolean.md) |  | [optional]
+**payment_method_id** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**cash_account** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**payment_lead_time** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfInt16**](DtoValueOfNullableOfInt16.md) |  | [optional]
+**payment_ref_display_mask** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**pay_separately** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfBoolean**](DtoValueOfNullableOfBoolean.md) |  | [optional]
+**vat_registration_id** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**corporate_id** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**vat_zone_id** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**charge_bearer** | [**\OpenAPI\Client\Model\DtoValueOfSupplierChargeBearer**](DtoValueOfSupplierChargeBearer.md) |  | [optional]
+**account_used_for_payment** | [**\OpenAPI\Client\Model\DtoValueOfAccountUsedForPayment**](DtoValueOfAccountUsedForPayment.md) |  | [optional]
+**payment_by** | [**\OpenAPI\Client\Model\DtoValueOfPaymentBy**](DtoValueOfPaymentBy.md) |  | [optional]
+**main_address** | [**\OpenAPI\Client\Model\DtoValueOfAddressUpdateDto**](DtoValueOfAddressUpdateDto.md) |  | [optional]
+**main_contact** | [**\OpenAPI\Client\Model\DtoValueOfContactInfoUpdateDto**](DtoValueOfContactInfoUpdateDto.md) |  | [optional]
+**remit_address** | [**\OpenAPI\Client\Model\DtoValueOfAddressUpdateDto**](DtoValueOfAddressUpdateDto.md) |  | [optional]
+**remit_contact** | [**\OpenAPI\Client\Model\DtoValueOfContactInfoUpdateDto**](DtoValueOfContactInfoUpdateDto.md) |  | [optional]
+**supplier_address** | [**\OpenAPI\Client\Model\DtoValueOfAddressUpdateDto**](DtoValueOfAddressUpdateDto.md) |  | [optional]
+**supplier_contact** | [**\OpenAPI\Client\Model\DtoValueOfContactInfoUpdateDto**](DtoValueOfContactInfoUpdateDto.md) |  | [optional]
+**gl_accounts** | [**\OpenAPI\Client\Model\DtoValueOfSupplierGlAccountsUpdateDto**](DtoValueOfSupplierGlAccountsUpdateDto.md) |  | [optional]
+**supplier_payment_method_details** | [**\OpenAPI\Client\Model\SupplierPaymentMethodDetailUpdateDto[]**](SupplierPaymentMethodDetailUpdateDto.md) |  | [optional]
+**attribute_lines** | [**\OpenAPI\Client\Model\AttributeLineUpdateDto[]**](AttributeLineUpdateDto.md) |  | [optional]
+**retainage_cash_account_id** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**retainage_apply** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfBoolean**](DtoValueOfNullableOfBoolean.md) |  | [optional]
+**retainage_pct** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfDecimal**](DtoValueOfNullableOfDecimal.md) |  | [optional]
+**note** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**override_number_series** | [**\OpenAPI\Client\Model\DtoValueOfBoolean**](DtoValueOfBoolean.md) |  | [optional]
+**nace_code** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**landed_cost_supplier** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfBoolean**](DtoValueOfNullableOfBoolean.md) |  | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

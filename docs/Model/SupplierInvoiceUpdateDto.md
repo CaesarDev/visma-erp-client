@@ -1,0 +1,46 @@
+# # SupplierInvoiceUpdateDto
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**document_type** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfSupplierInvoiceTypes**](DtoValueOfNullableOfSupplierInvoiceTypes.md) |  | [optional]
+**reference_number** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**hold** | [**\OpenAPI\Client\Model\DtoValueOfBoolean**](DtoValueOfBoolean.md) |  | [optional]
+**date** | [**\OpenAPI\Client\Model\DtoValueOfDateTime**](DtoValueOfDateTime.md) |  | [optional]
+**orig_invoice_date** | [**\OpenAPI\Client\Model\DtoValueOfDateTime**](DtoValueOfDateTime.md) |  | [optional]
+**post_period** | [**\OpenAPI\Client\Model\PostPeriodInSupplierInvoiceUpdateDto**](PostPeriodInSupplierInvoiceUpdateDto.md) |  | [optional]
+**financial_period** | [**\OpenAPI\Client\Model\FinancialPeriodInSupplierInvoiceUpdateDto**](FinancialPeriodInSupplierInvoiceUpdateDto.md) |  | [optional]
+**supplier_reference** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**description** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**supplier_number** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**location_id** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**currency_id** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**payment_ref_no** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**credit_terms_id** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**due_date** | [**\OpenAPI\Client\Model\DtoValueOfDateTime**](DtoValueOfDateTime.md) |  | [optional]
+**cash_discount_date** | [**\OpenAPI\Client\Model\DtoValueOfDateTime**](DtoValueOfDateTime.md) |  | [optional]
+**note** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**exchange_rate** | [**\OpenAPI\Client\Model\DtoValueOfDecimal**](DtoValueOfDecimal.md) |  | [optional]
+**branch_number** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**rounding_diff_in_currency** | [**\OpenAPI\Client\Model\DtoValueOfDecimal**](DtoValueOfDecimal.md) |  | [optional]
+**tax_calculation_mode** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfTaxCalcMode**](DtoValueOfNullableOfTaxCalcMode.md) |  | [optional]
+**supplier_tax_zone** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**cash_account** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**payment_method** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**pay_date** | [**\OpenAPI\Client\Model\DtoValueOfDateTime**](DtoValueOfDateTime.md) |  | [optional]
+**amount** | [**\OpenAPI\Client\Model\DtoValueOfDecimal**](DtoValueOfDecimal.md) |  | [optional]
+**vat_amount** | [**\OpenAPI\Client\Model\DtoValueOfDecimal**](DtoValueOfDecimal.md) |  | [optional]
+**payment_message** | [**\OpenAPI\Client\Model\DtoValueOfString**](DtoValueOfString.md) |  | [optional]
+**apply_retainage** | [**\OpenAPI\Client\Model\DtoValueOfNullableOfBoolean**](DtoValueOfNullableOfBoolean.md) |  | [optional]
+**tax_detail_lines** | [**\OpenAPI\Client\Model\TaxDetailUpdateDto[]**](TaxDetailUpdateDto.md) |  | [optional]
+**invoice_lines** | [**\OpenAPI\Client\Model\SupplierInvoiceLineUpdateDto[]**](SupplierInvoiceLineUpdateDto.md) |  | [optional]
+**approval_details** | [**\OpenAPI\Client\Model\ApprovalDetailsUpdateDto**](ApprovalDetailsUpdateDto.md) |  | [optional]
+**add_po_receipt_lines** | [**\OpenAPI\Client\Model\AddPOReceiptLineDto[]**](AddPOReceiptLineDto.md) |  | [optional]
+**add_purchase_orders** | [**\OpenAPI\Client\Model\AddPurchaseOrderDto[]**](AddPurchaseOrderDto.md) |  | [optional]
+**landed_costs** | [**\OpenAPI\Client\Model\SupplierInvoiceLandedCostUpdateDto[]**](SupplierInvoiceLandedCostUpdateDto.md) |  | [optional]
+**pay_selected** | [**\OpenAPI\Client\Model\PaySelectedInSupplierInvoiceUpdateDto**](PaySelectedInSupplierInvoiceUpdateDto.md) |  | [optional]
+**override_number_series** | [**\OpenAPI\Client\Model\DtoValueOfBoolean**](DtoValueOfBoolean.md) |  | [optional]
+**validate_line_details** | [**\OpenAPI\Client\Model\ValidateLineDetailsInSupplierInvoiceUpdateDto**](ValidateLineDetailsInSupplierInvoiceUpdateDto.md) |  | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
