@@ -2512,12 +2512,11 @@ class ProjectApi
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return object|\OpenAPI\Client\Model\BackgroundApiAcceptedDto
+     * @return void
      */
     public function projectPost($project_update_dto, $erp_api_background = null, string $contentType = self::contentTypes['projectPost'][0])
     {
-        list($response) = $this->projectPostWithHttpInfo($project_update_dto, $erp_api_background, $contentType);
-        return $response;
+        $this->projectPostWithHttpInfo($project_update_dto, $erp_api_background, $contentType);
     }
 
     /**
@@ -2531,7 +2530,7 @@ class ProjectApi
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of object|\OpenAPI\Client\Model\BackgroundApiAcceptedDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function projectPostWithHttpInfo($project_update_dto, $erp_api_background = null, string $contentType = self::contentTypes['projectPost'][0])
     {
@@ -2560,51 +2559,9 @@ class ProjectApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
-                case 201:
-                    return $this->handleResponseWithDataType(
-                        'object',
-                        $request,
-                        $response,
-                    );
-                case 202:
-                    return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\BackgroundApiAcceptedDto',
-                        $request,
-                        $response,
-                    );
-            }
-
-            
-
-            if ($statusCode < 200 || $statusCode > 299) {
-                throw new ApiException(
-                    sprintf(
-                        '[%d] Error connecting to the API (%s)',
-                        $statusCode,
-                        (string) $request->getUri()
-                    ),
-                    $statusCode,
-                    $response->getHeaders(),
-                    (string) $response->getBody()
-                );
-            }
-
-            return $this->handleResponseWithDataType(
-                'object',
-                $request,
-                $response,
-            );
+            return [null, $statusCode, $response->getHeaders()];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
-                case 201:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'object',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    throw $e;
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
@@ -2656,27 +2613,14 @@ class ProjectApi
      */
     public function projectPostAsyncWithHttpInfo($project_update_dto, $erp_api_background = null, string $contentType = self::contentTypes['projectPost'][0])
     {
-        $returnType = 'object';
+        $returnType = '';
         $request = $this->projectPostRequest($project_update_dto, $erp_api_background, $contentType);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
             ->then(
                 function ($response) use ($returnType) {
-                    if ($returnType === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ($returnType !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, $returnType, []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
+                    return [null, $response->getStatusCode(), $response->getHeaders()];
                 },
                 function ($exception) {
                     $response = $exception->getResponse();
